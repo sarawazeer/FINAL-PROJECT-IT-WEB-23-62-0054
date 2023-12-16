@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title> Taskia </title>
+  <style>
+   
+
+    .try-free-btn {
+      background-color: white; 
+      color: #007BFF; 
+      border: 2px solid #007BFF; 
+      border-radius: 50px; 
+      line-height: 1.8; 
+      height: 40px; 
+      padding: 0 20px; 
+      cursor: pointer;
+      margin-right: 90px; 
+    }
+
+    .navbar {
+      display: none; 
+    }
+
+    #taskiaText {
+      color: #3399FF; 
+      font-size: 30px; 
+      font-weight: bold;
+      cursor: pointer;
+      margin-left: 50px;
+      margin-bottom: 100px;
+    }
+    
+    .content-section {
+      margin-top: 20px; /* Adjust the top margin for spacing */
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .content-text {
+      flex: 1;
+      margin-right: 20px;
+      
+    }
+
+    .content-heading {
+      font-size: 40px; 
+      font-weight: 900;
+      font-family: 'arial black', sans-serif;
+    }
+
+    .content-paragraph {
+      font-size: 18px; /* Adjust the font size as needed */
+      margin-top: 10px; 
+      color: #888; 
+    }
+
+    .content-image {
+      max-width: 60%;
+      height: auto;
+      margin-left: 80px;
+      margin-top: 10px;
+    }
+
+    .pill-shaped-input {
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #ccc;
+  }
+
+  .pill-shaped-btn {
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #fff;
+  }
+
+  .white-space-no-wrap {
+  white-space: nowrap;
+}
+
+.card-blue {
+    background-color: #007BFF; 
+    color: #fff; 
+  }
+
+  .card-light-blue {
+    background-color: #e0f7fa; 
+    color: #000; 
+  }
+
+  .card-yellow {
+    background-color: #ffeb3b; 
+    color: #000; 
+  }
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+  .card-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.pill-shaped-btn {
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #007BFF; /* Set the background color to blue */
+    border: none;
+    cursor: pointer;
+}
+
+.custom-pill-shaped-input {
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ccc;
+  max-width: 200px;
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pill-shaped-btn {
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+}
+
+
+.trust-section {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    .trust-heading {
+      color: black;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .number-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left-image,
+    .right-image {
+      max-width: 80px;
+      margin: 0 15px;
+    }
+
+    .big-bold-blue {
+      color: #007BFF;
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+
+
+    <div class="d-flex justify-content-between mt-3">
+      <span id="taskiaText" style="cursor: pointer;" onclick="toggleNavbar()">Taskia</span>
+      <button class="try-free-btn">Try Free</button>
+</div>
+
+<nav class="navbar">
+    
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Tasks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Priorities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Calendar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container content-section">
+    <div class="content-text">
+      <div class="content-heading">Task management <br> and lists Tool</div>
+      <p class="content-paragraph">
+        We believe that designing products and services in close <br>
+        partnership with our clients is the only way to have a real <br>
+        impact on their business
+      </p>
+      <div class="d-flex">
+        <input type="text" class="form-control pill-shaped-input" value="Name@company.com">
+        <button class="btn btn-primary pill-shaped-btn ml-2 white-space-no-wrap">Try It Free</button>
+      </div>
+    </div>
+    <img src="hero image.jpg" alt="Taskia Image" class="content-image">
+  </div>
+  
+  <div style="height: 90px;"></div>
+
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-12 text-center mb-4">
+        <h2 style="font-weight: bold;">Featured Service that We Provide</h2>
+      </div>
+    </div>    
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card card-blue rounded-lg" style="width: 80%;">
+          <img src="Image 3.png" class="card-img-top" alt="Image 1">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-3">Keep tasks in one place</h5>
+            <p class="card-text">Save time, avoid losing work and information, delegate, and track tasks to stay on schedule.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card card-light-blue rounded-lg" style="width: 80%;">
+          <img src="Image 2.png" class="card-img-top" alt="Image 2">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-3">Keep tasks in one place</h5>
+            <p class="card-text">Save time, avoid losing work and information, delegate, and track tasks to stay on schedule.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card card-yellow rounded-lg" style="width: 80%;">
+          <img src="Image 1.png" class="card-img-top" alt="Image 3">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-3">Keep tasks in one place</h5>
+            <p class="card-text">Save time, avoid losing work and information, delegate, and track tasks to stay on schedule.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 80px;"></div>
+  
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-5 mt-3 text-center">
+        <div class="mx-auto" style="max-width: 100%;">
+          <img src="Image 8.jpg" alt="schedule ss" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-7 d-flex align-items-center">
+        <div>
+          <h2 style="font-weight: bold;">Why do you need <br> task management</h2>
+          <p style="color: #888;">
+            Do you waste time organizing sticky notes, searching your email <br>
+            and apps for to-dos, and figuring out what to work on first? <br>
+            Then you need one solution to prioritize your tasks, manage <br>
+            your time, and meet your deadlines.
+          </p>
+          <button class="btn btn-primary pill-shaped-btn">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+  <div style="height: 100px;"></div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center">
+        <div>
+          <h2 style="font-weight: bold;">Seamless Team <br> Workflow & Efficient</h2>
+          <p style="color: #888;">
+            Do you waste time organizing sticky notes, searching your email <br>
+            and apps for to-dos, and figuring out what to work on first? <br>
+            Then you need one solution to prioritize your tasks, manage <br>
+            your time, and meet your deadlines.
+          </p>
+          <div class="d-flex">
+            <img src="Image 6.jpg" class="img-fluid mr-4" style="max-width: 40px;">
+            <img src="Image 9.jpg" class="img-fluid" style="max-width: 90px;">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="Image 7.jpg" alt="Your Image Description" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  
+  <div class="trust-section">
+    <h2 class="trust-heading">Trust us and feel free to try our service</h2>
+    <div class="number-container">
+      <img src="Image 4.jpg" alt="Left Image" class="left-image">
+      <span class="big-bold-blue">100,000</span>
+      <img src="Image 5.jpg" alt="Right Image" class="right-image">
+    </div>
+  </div>
+
+
+
+  <div style="height: 50px;"></div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="content-heading">Get better work done</h2>
+        <p class="content-paragraph">See why millions of people across 195 <br> countries use Taskia.</p>
+  
+       
+        <div class="text-field-section">
+          <input type="text" class="form-control custom-pill-shaped-input" value="Name@company.com">
+          <button class="btn btn-primary pill-shaped-btn ml-2">Try It Free</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+ 
+
+
+  
+    
+
+
+<!-- Bootstrap JS and Popper.js (optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+
+<script>
+  function toggleNavbar() {
+    var navbar = document.querySelector('.navbar');
+    navbar.style.display = (navbar.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
